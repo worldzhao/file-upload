@@ -9,7 +9,7 @@ const koaStatic = require("koa-static");
 const app = new Koa();
 const router = new Router();
 
-const uploadDir = path.join(__dirname, "public/uploads");
+const uploadDir = path.resolve(__dirname, "./public/uploads");
 
 app.use(koaStatic(path.resolve(__dirname, "./public")));
 
